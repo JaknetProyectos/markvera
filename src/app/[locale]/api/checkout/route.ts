@@ -6,9 +6,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 // Fácil de cambiar
 const BRAND_NAME = `Markvera`;
 const BRAND_URL = `https://markvera.com`;
-const SUPPORT_EMAIL = `sales@clickential.com.mx`;
-const BRAND_LOGO = `https://nexorithm.com.mx/title-dark.png`;
-const PRODUCT_IMAGE="https://nexorithm.com.mx/logo-dark.png"
+const SUPPORT_EMAIL = `atencion@mark-vera.com`;
+const BRAND_LOGO = `https://mark-vera.com/title.png`;
+const PRODUCT_IMAGE="https://mark-vera.com/logo.png"
 
 function formatCurrency(value: number) {
   return new Intl.NumberFormat("es-MX", {

@@ -4,10 +4,10 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Fácil de cambiar
-const SUPPORT_EMAIL = `sales@clickential.com.mx`;
+const SUPPORT_EMAIL = `atencion@mark-vera.com`;
 const BRAND_NAME = `Markvera`;
 const BRAND_URL = `https://markvera.com`;
-const BRAND_LOGO = `https://nexorithm.com.mx/title-dark.png`;
+const BRAND_LOGO = `https://mark-vera.com/title.png`;
 
 function escapeHtml(value: string) {
   return value
