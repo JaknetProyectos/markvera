@@ -1,0 +1,362 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "summary": "1. Revisión",
+      "shippingPayment": "2. Entrega y Pago"
+    },
+    "success": {
+      "title": "¡Transacción Completada Exitosamente!",
+      "description": "Tu pago ha sido autorizado. El entorno cloud de tu plan de hosting ya está en fase de configuración para su activación.",
+      "paymentReference": "Referencia de Pago:",
+      "paidAmount": "Monto Liquidado:",
+      "transactionStatus": "Estado del Pago:",
+      "approved": "AUTORIZADA",
+      "backToCatalog": "Regresar al Catálogo"
+    },
+    "empty": {
+      "title": "Tu cesta de compras está vacía",
+      "description": "No se detectaron servicios de hosting guardados en tu sesión de navegación actual.",
+      "goToStore": "Ver el Catálogo"
+    },
+    "order": {
+      "title": "Productos en tu orden",
+      "clear": "Eliminar Planes"
+    },
+    "financial": {
+      "title": "Resumen de Cuenta",
+      "couponPlaceholder": "Código promocional",
+      "applyCoupon": "Aplicar",
+      "appliedCoupon": "Cupón {code} (-{discount}%)",
+      "remove": "Quitar",
+      "couponInvalid": "El código de descuento no es válido o ya expiró.",
+      "subtotal": "Subtotal de Productos:",
+      "discount": "Descuento Obtenido:",
+      "netTotal": "Monto Neto a Liquidar:",
+      "tax": "IVA {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Avanzar al Pago",
+      "processing": "Validando Transacción por medio de Octano...",
+      "payAmount": "Pagar {amount}",
+      "backToCart": "Modificar pedido / Modificar cupón"
+    },
+    "errors": {
+      "declined": "El cargo fue denegado por el banco emisor.",
+      "connection": "Se experimentó un problema de enlace con el procesador de pagos."
+    },
+    "metadata": {
+      "couponApplied": "Cupón de descuento activo",
+      "standardSale": "Adquisición digital convencional"
+    },
+    "form": {
+      "buyerTitle": "Datos de Facturación / Comprador",
+      "addressTitle": "Información de Contacto y Activación",
+      "paymentTitle": "Pasarela de Cobro Encriptada",
+      "firstName": "Nombre(s) *",
+      "lastName": "Apellidos *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono Móvil (10 posiciones) *",
+      "company": "Empresa (Opcional)",
+      "streetAddress": "Vía pública, Número Exterior y Número Interior *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Colonia / Entre Calles (Opcional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Alcaldía o Localidad *",
+      "state": "Provincia / Estado *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "Código Postal *",
+      "country": "Territorio",
+      "mexico": "México (MX)",
+      "cardNumber": "Número de Tarjeta (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Titular de la Tarjeta *",
+      "cardHolderPlaceholder": "Tal como aparece en la tarjeta",
+      "expiryMonth": "Mes Exp. (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Año Exp. (AAAA) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Código de Verificación (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Proceso gestionado bajo estándares de seguridad"
+    },
+    "images": {
+      "etominAlt": "Octano",
+      "securePaymentAlt": "Pago seguro"
+    }
+  },
+  "header": {
+    "logoAlt": "Logo de Markvera",
+    "titleAlt": "Título de Markvera",
+    "cart": "Carrito",
+    "openMenu": "Abrir menú",
+    "packages": "Paquetes",
+    "nav": {
+      "home": "PRINCIPAL",
+      "about": "CONÓCENOS",
+      "services": "OFERTA",
+      "contact": "INFORMACIÓN"
+    },
+    "services": {
+      "title": "Servicios",
+      "description": "Explora nuestro catálogo de soluciones."
+    }
+  },
+  "hero": {
+    "badge": "Somos Markvera",
+    "title": {
+      "first": "Desarrollo",
+      "highlight": "inteligente",
+      "last": "para software y aplicaciones"
+    },
+    "description": "Creamos soluciones digitales modernas, escalables y diseñadas para automatizar procesos, optimizar operaciones y acelerar tu crecimiento.",
+    "imageAlt": "Equipo de desarrollo de software trabajando"
+  },
+  "servicesSection": {
+    "badge": "Lo que ofrecemos",
+    "title": "Nuestros servicios",
+    "viewAll": "Ver Todos Los Servicios",
+    "viewService": "Ver servicio",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "whyUs": {
+    "badge": "Lo que nos distingue",
+    "title": "Lo que nos distingue",
+    "description": "Contamos con un equipo de profesionales de vasta experiencia en el desarrollo de software.",
+    "cta": "Sobre Nosotros",
+    "imageAlt": "Equipo feliz de Markvera",
+    "distinguishingFeatures": [
+      "Soporte continuo",
+      "Mantenemos tus sistemas operativos",
+      "Soluciones diseñadas para escalar con tu negocio."
+    ]
+  },
+  "pricing": {
+    "badge": "Nuestra Oferta",
+    "title": "PAQUETES",
+    "popular": "Popular",
+    "moreInfo": "Más Información",
+    "viewAll": "Ver Todos Los Paquetes",
+    "tax" : "+ IVA"
+  },
+  "ctaSection": {
+    "badge": "Transformación digital",
+    "title": "Conviértete en una empresa digital",
+    "description": "Nos esforzamos por entender y satisfacer las necesidades tecnológicas de cada cliente, ofreciendo servicios personalizados y resultados excepcionales.",
+    "button": "Nuestros Servicios",
+    "imageAlt": "Profesional con laptop"
+  },
+  "footer": {
+    "about": {
+      "badge": "Sobre nosotros",
+      "description": "Desarrollamos software y aplicaciones personalizadas con enfoque en rendimiento, automatización y escalabilidad."
+    },
+    "titles": {
+      "navigation": "Navegación",
+      "services": "Servicios",
+      "legal": "Legal",
+      "contact": "Contacto"
+    },
+    "navigation": {
+      "about": "Nosotros",
+      "services": "Nuestros servicios",
+      "packages": "Paquetes",
+      "contact": "Contáctanos"
+    },
+    "services": {
+      "mobileApps": "Apps móviles",
+      "customSoftware": "Software a medida",
+      "systemIntegration": "Integración de Sistemas",
+      "techConsulting": "Consultoría Tecnológica",
+      "automation": "Automatización",
+      "support": "Soporte y Mantenimiento"
+    },
+    "legal": {
+      "privacy": "Aviso de privacidad",
+      "terms": "Términos y condiciones",
+      "refunds": "Reembolsos"
+    },
+    "contact": {
+      "address": "Avenida Río Mixcoac 39 Piso 1 Despacho 103, Col. Insurgentes Mixcoac, Benito Juárez, CDMX."
+    },
+    "paymentsAlt": "Métodos de pago",
+    "copyright": "Markvera © {year}. Todos los derechos reservados."
+  },
+  "contactPage": {
+    "banner": {
+      "title": "Contáctanos",
+      "breadcrumb": "Contáctanos"
+    },
+    "info": {
+      "badge": "Hablemos",
+      "title": "¡Contáctanos!",
+      "description": "No dudes en ponerte en contacto con nosotros para obtener más información y descubrir cómo podemos ayudarte a alcanzar tus objetivos. ¡Esperamos tu mensaje!"
+    },
+    "form": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "message": "Escribe tu mensaje",
+      "submit": "Enviar",
+      "sending": "Enviando..."
+    },
+    "messages": {
+      "success": "¡Gracias por tu mensaje! Te contactaremos pronto.",
+      "error": "Ocurrió un error al enviar el formulario."
+    }
+  },
+  "aboutPage": {
+    "banner": {
+      "title": "Nosotros",
+      "breadcrumb": "Nosotros"
+    },
+    "companyValues": [
+      {
+        "icon": "Lightbulb",
+        "title": "Innovación",
+        "description": "Constantemente buscamos nuevas formas de mejorar y superar las expectativas."
+      },
+      {
+        "icon": "Award",
+        "title": "Calidad",
+        "description": "Nos comprometemos a entregar soluciones que cumplen con los más altos estándares."
+      },
+      {
+        "icon": "Users",
+        "title": "Integridad",
+        "description": "Actuamos con honestidad y transparencia en todas nuestras interacciones."
+      },
+      {
+        "icon": "Heart",
+        "title": "Compromiso",
+        "description": "Dedicación absoluta a la satisfacción de nuestros clientes."
+      }
+    ],
+    "about": {
+      "imageAlt": "Equipo Markvera",
+      "badge": "Sobre Nosotros",
+      "title": "Somos Markvera",
+      "description": "Tenemos la capacidad para entender y resolver problemas tecnológicos complejos. Nos enfocamos en ofrecer soluciones personalizadas que realmente agreguen valor a tu negocio. Nuestra experiencia y dedicación nos permiten entregar productos de alta calidad y rendimiento.",
+      "features": {
+        "custom": "Soluciones personalizadas",
+        "performance": "Alto rendimiento"
+      }
+    },
+    "values": {
+      "badge": "Lo que nos guía",
+      "title": "NUESTROS VALORES"
+    }
+  },
+  "customPackagePage": {
+    "hero": {
+      "badge": "Producto personalizado",
+      "title": "Detalles del Producto"
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "packages": "Paquetes",
+      "current": "Paquete a la medida"
+    },
+    "product": {
+      "name": "Paquete a la medida",
+      "imageAlt": "Paquete personalizado"
+    },
+    "description": {
+      "contactAdvisor": "Contacta a un asesor.",
+      "instructions": "Para cotizar un paquete a la medida contacta a un asesor. Escribe los datos de tu paquete a la medida para realizar el pago correspondiente."
+    },
+    "form": {
+      "badge": "Paquete especial",
+      "folioLabel": "Folio del paquete",
+      "folioPlaceholder": "Ej. AB-2026-001",
+      "amountLabel": "Monto a pagar",
+      "addToCart": "Agregar al carrito"
+    },
+    "total": {
+      "label": "Final total"
+    }
+  },
+  "packages": {
+    "banner": {
+      "title": "Paquetes",
+      "breadcrumb": "Paquetes"
+    },
+    "main": {
+      "badge": "Nuestros Paquetes",
+      "title": "Paquetes para cada tamaño de empresa",
+      "featured": "Destacado",
+      "packageLabel": "Paquete {number}",
+      "tax": "+ IVA"
+    },
+    "buttons": {
+      "added": "Agregado",
+      "startNow": "Empieza Ahora"
+    },
+    "consulting": {
+      "title": "¿Tienes una duda rápida sobre tecnología y no sabes a quién acudir?",
+      "description": "Con nuestros servicios de consultoría individual, obtén una respuesta clara en minutos. Ideal para resolver problemas urgentes o tomar decisiones rápidas sin perder tiempo ni dinero."
+    },
+    "cta": {
+      "imageAlt": "Profesional",
+      "badge": "¿Necesitas más capacidad?",
+      "title": "Tenemos un paquete hecho a la medida",
+      "description": "Contáctanos y uno de nuestros asesores te hará un paquete a la medida para cubrir las necesidades de tu compañía",
+      "button": "Paquete A Medida"
+    }
+  },
+  "services": {
+    "banner": {
+      "title": "Nuestros servicios",
+      "breadcrumb": "Nuestros servicios"
+    },
+    "service": {
+      "badge": "Servicio",
+      "readMore": "Leer Más"
+    },
+    "cta": {
+      "badge": "Impulsa tu empresa",
+      "title": "Conviértete en una empresa digital",
+      "description": "Nos esforzamos por entender y satisfacer las necesidades tecnológicas de cada cliente, ofreciendo servicios personalizados y resultados excepcionales.",
+      "button": "Ver Paquetes",
+      "imageAlt": "Profesional"
+    }
+  },
+  "serviceDetail": {
+    "hero": {
+      "tag": "Servicio tecnológico"
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "services": "Nuestros servicios"
+    },
+    "feature": {
+      "placeholderLabel": "FeatureImage",
+      "placeholderDescription": "Agrega aquí la imagen destacada"
+    },
+    "aside": {
+      "title": "Nuestros servicios",
+      "subtitle": "Explora el resto de servicios disponibles."
+    },
+    "description": {
+      "title": "Descripción",
+      "subtitle": "Resumen claro del servicio y del valor que aporta."
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "subtitle": "Resultados y ventajas que obtienes con este servicio."
+    },
+    "process": {
+      "title": "Cómo lo hacemos",
+      "subtitle": "Proceso de trabajo explicado en pasos desplegables."
+    },
+    "notFound": {
+      "title": "Servicio no encontrado",
+      "description": "El servicio que buscas no está disponible o no existe. Revisa la lista de servicios para continuar.",
+      "button": "Ver servicios"
+    }
+  }
+}

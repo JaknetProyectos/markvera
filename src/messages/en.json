@@ -1,0 +1,362 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "summary": "1. Review",
+      "shippingPayment": "2. Delivery and Payment Details"
+    },
+    "success": {
+      "title": "Payment Authorized Successfully!",
+      "description": "Your transaction has been approved. Your cloud hosting plan configuration is currently being processed for immediate activation.",
+      "paymentReference": "Payment ID:",
+      "paidAmount": "Total Paid:",
+      "transactionStatus": "Transaction State:",
+      "approved": "APPROVED",
+      "backToCatalog": "Return to Catalog"
+    },
+    "empty": {
+      "title": "Your shopping cart is empty",
+      "description": "We could not find any hosting services or plans selected in your current browsing session.",
+      "goToStore": "View Catalog"
+    },
+    "order": {
+      "title": "Products in Your Order",
+      "clear": "Remove Plans"
+    },
+    "financial": {
+      "title": "Account Summary",
+      "couponPlaceholder": "Promo code",
+      "applyCoupon": "Validate",
+      "appliedCoupon": "Promo {code} (-{discount}%)",
+      "remove": "Delete",
+      "couponInvalid": "The discount code you entered is invalid or has expired.",
+      "subtotal": "Subtotal amount:",
+      "discount": "Discount applied:",
+      "netTotal": "Net Balance Due:",
+      "tax": "VAT {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Continue to Payment Form",
+      "processing": "Checking Funds through Octano...",
+      "payAmount": "Authorize {amount}",
+      "backToCart": "Edit my order / Modify coupon"
+    },
+    "errors": {
+      "declined": "The charge was rejected by the card issuer.",
+      "connection": "A communication error occurred with the payment platform."
+    },
+    "metadata": {
+      "couponApplied": "Promo code active",
+      "standardSale": "Standard digital purchase"
+    },
+    "form": {
+      "buyerTitle": "Purchaser / Billing Details",
+      "addressTitle": "Contact and Activation Details",
+      "paymentTitle": "Secured Payment Gateway",
+      "firstName": "First Name(s) *",
+      "lastName": "Last Name(s) *",
+      "email": "Email Address *",
+      "phone": "Cell Phone (10 digits) *",
+      "company": "Company Name (Optional)",
+      "streetAddress": "Street, Exterior No. and Interior No. *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Apt 4",
+      "neighborhood": "Neighborhood / Intersections (Optional)",
+      "neighborhoodPlaceholder": "Vértiz Narvarte",
+      "city": "City *",
+      "state": "State / Province *",
+      "statePlaceholder": "Mexico City",
+      "postalCode": "ZIP / Postal Code *",
+      "country": "Country",
+      "mexico": "Mexico (MX)",
+      "cardNumber": "Card Number (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Cardholder Full Name *",
+      "cardHolderPlaceholder": "Exactly as shown on the card",
+      "expiryMonth": "Exp. Month (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Exp. Year (YYYY) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Security Code (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Secured Transaction"
+    },
+    "images": {
+      "etominAlt": "Octano",
+      "securePaymentAlt": "Safe transaction"
+    }
+  },
+  "header": {
+    "logoAlt": "Markvera Logo",
+    "titleAlt": "Markvera Title",
+    "cart": "Cart",
+    "openMenu": "Open menu",
+    "packages": "Packages",
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT US",
+      "services": "SERVICES",
+      "contact": "INFORMATION"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Explore our catalog of solutions."
+    }
+  },
+  "hero": {
+    "badge": "We Are Markvera",
+    "title": {
+      "first": "Smart",
+      "highlight": "development",
+      "last": "for software and applications"
+    },
+    "description": "We create modern, scalable digital solutions designed to automate processes, optimize operations, and accelerate your growth.",
+    "imageAlt": "Software development team working"
+  },
+  "servicesSection": {
+    "badge": "What We Offer",
+    "title": "Our Services",
+    "viewAll": "View All Services",
+    "viewService": "View service",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "whyUs": {
+    "badge": "What Sets Us Apart",
+    "title": "What Sets Us Apart",
+    "description": "We have a team of professionals with extensive experience in software development.",
+    "cta": "About Us",
+    "distinguishingFeatures": [
+      "Continuous support",
+      "We maintain your operating systems",
+      "Solutions designed to scale with your business."
+    ],
+    "imageAlt": "Happy Markvera team"
+  },
+  "pricing": {
+    "badge": "Our Offer",
+    "title": "PACKAGES",
+    "popular": "Popular",
+    "moreInfo": "More Information",
+    "viewAll": "View All Packages",
+    "tax": "+ VAT"
+  },
+  "ctaSection": {
+    "badge": "Digital Transformation",
+    "title": "Become a Digital Company",
+    "description": "We strive to understand and meet each client's technological needs by offering personalized services and exceptional results.",
+    "button": "Our Services",
+    "imageAlt": "Professional with laptop"
+  },
+  "footer": {
+    "about": {
+      "badge": "About us",
+      "description": "We develop custom software and applications focused on performance, automation, and scalability."
+    },
+    "titles": {
+      "navigation": "Navigation",
+      "services": "Services",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "navigation": {
+      "about": "About Us",
+      "services": "Our Services",
+      "packages": "Packages",
+      "contact": "Contact Us"
+    },
+    "services": {
+      "mobileApps": "Mobile Apps",
+      "customSoftware": "Custom Software",
+      "systemIntegration": "System Integration",
+      "techConsulting": "Technology Consulting",
+      "automation": "Automation",
+      "support": "Support & Maintenance"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "refunds": "Refunds"
+    },
+    "contact": {
+      "address": "Avenida Río Mixcoac 39 Floor 1 Office 103, Col. Insurgentes Mixcoac, Benito Juárez, Mexico City."
+    },
+    "paymentsAlt": "Payment methods",
+    "copyright": "Markvera © {year}. All rights reserved."
+  },
+  "contactPage": {
+    "banner": {
+      "title": "Contact Us",
+      "breadcrumb": "Contact Us"
+    },
+    "info": {
+      "badge": "Let's Talk",
+      "title": "Get in Touch!",
+      "description": "Feel free to contact us for more information and discover how we can help you achieve your goals. We look forward to your message!"
+    },
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email Address",
+      "message": "Write your message",
+      "submit": "Send",
+      "sending": "Sending..."
+    },
+    "messages": {
+      "success": "Thank you for your message! We will contact you soon.",
+      "error": "An error occurred while sending the form."
+    }
+  },
+  "aboutPage": {
+    "banner": {
+      "title": "About Us",
+      "breadcrumb": "About Us"
+    },
+    "companyValues": [
+      {
+        "icon": "Lightbulb",
+        "title": "Innovation",
+        "description": "We constantly seek new ways to improve and exceed expectations."
+      },
+      {
+        "icon": "Award",
+        "title": "Quality",
+        "description": "We are committed to delivering solutions that meet the highest standards."
+      },
+      {
+        "icon": "Users",
+        "title": "Integrity",
+        "description": "We act with honesty and transparency in all our interactions."
+      },
+      {
+        "icon": "Heart",
+        "title": "Commitment",
+        "description": "Absolute dedication to customer satisfaction."
+      }
+    ],
+    "about": {
+      "imageAlt": "Markvera Team",
+      "badge": "About Us",
+      "title": "We Are Markvera",
+      "description": "We have the ability to understand and solve complex technological problems. We focus on delivering customized solutions that truly add value to your business. Our experience and dedication allow us to deliver high-quality, high-performance products.",
+      "features": {
+        "custom": "Custom Solutions",
+        "performance": "High Performance"
+      }
+    },
+    "values": {
+      "badge": "What Guides Us",
+      "title": "OUR VALUES"
+    }
+  },
+  "customPackagePage": {
+    "hero": {
+      "badge": "Custom Product",
+      "title": "Product Details"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "packages": "Packages",
+      "current": "Custom Package"
+    },
+    "product": {
+      "name": "Custom Package",
+      "imageAlt": "Custom package"
+    },
+    "description": {
+      "contactAdvisor": "Contact an advisor.",
+      "instructions": "To request a quote for a custom package, contact an advisor. Enter your custom package details to complete the corresponding payment."
+    },
+    "form": {
+      "badge": "Special Package",
+      "folioLabel": "Package Reference",
+      "folioPlaceholder": "Ex. AB-2026-001",
+      "amountLabel": "Amount to Pay",
+      "addToCart": "Add to Cart"
+    },
+    "total": {
+      "label": "Final Total"
+    }
+  },
+  "packages": {
+    "banner": {
+      "title": "Packages",
+      "breadcrumb": "Packages"
+    },
+    "main": {
+      "badge": "Our Packages",
+      "title": "Packages for every business size",
+      "featured": "Featured",
+      "packageLabel": "Package {number}",
+      "tax": "+ VAT"
+    },
+    "buttons": {
+      "added": "Added",
+      "startNow": "Start Now"
+    },
+    "consulting": {
+      "title": "Do you have a quick technology question and don’t know who to ask?",
+      "description": "With our individual consulting services, get a clear answer in minutes. Perfect for solving urgent problems or making fast decisions without wasting time or money."
+    },
+    "cta": {
+      "imageAlt": "Professional",
+      "badge": "Need more capacity?",
+      "title": "We have a custom-made package for you",
+      "description": "Contact us and one of our advisors will create a tailored package to meet your company’s needs",
+      "button": "Custom Package"
+    }
+  },
+  "services": {
+    "banner": {
+      "title": "Our services",
+      "breadcrumb": "Our services"
+    },
+    "service": {
+      "badge": "Service",
+      "readMore": "Read More"
+    },
+    "cta": {
+      "badge": "Boost your business",
+      "title": "Become a digital company",
+      "description": "We strive to understand and meet each client's technological needs, offering personalized services and exceptional results.",
+      "button": "View Packages",
+      "imageAlt": "Professional"
+    }
+  },
+  "serviceDetail": {
+    "hero": {
+      "tag": "Technology service"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Our services"
+    },
+    "feature": {
+      "placeholderLabel": "FeatureImage",
+      "placeholderDescription": "Add featured image here"
+    },
+    "aside": {
+      "title": "Our services",
+      "subtitle": "Explore the rest of the available services."
+    },
+    "description": {
+      "title": "Description",
+      "subtitle": "Clear overview of the service and the value it provides."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "subtitle": "Results and advantages you get from this service."
+    },
+    "process": {
+      "title": "How we do it",
+      "subtitle": "Work process explained in expandable steps."
+    },
+    "notFound": {
+      "title": "Service not found",
+      "description": "The service you are looking for is not available or does not exist. Review the services list to continue.",
+      "button": "View services"
+    }
+  }
+}

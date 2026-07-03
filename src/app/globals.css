@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 6% 14%;
+    --foreground: 0 0% 98%;
+    --card: 240 6% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 6% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 68 55% 54%;
+    --primary-foreground: 240 6% 10%;
+    --secondary: 240 6% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 6% 20%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 68 55% 54%;
+    --accent-foreground: 240 6% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 25%;
+    --input: 240 6% 25%;
+    --ring: 68 55% 54%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(240 6% 14%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(68 55% 54%);
+  border-radius: 4px;
+}
+
+/* Lime accent color */
+.text-lime {
+  color: #b5c74b;
+}
+
+.bg-lime {
+  background-color: #b5c74b;
+}
+
+.border-lime {
+  border-color: #b5c74b;
+}
+
+/* Pattern background */
+.hero-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%237b4397' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Curved lines pattern */
+.curved-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.curved-pattern::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(139, 92, 246, 0.15) 70%, transparent 80%);
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+/* Mountain texture for pricing */
+.mountain-bg {
+  background: linear-gradient(to bottom,
+    rgba(32, 31, 39, 0.95) 0%,
+    rgba(32, 31, 39, 0.8) 100%
+  ), url('https://ext.same-assets.com/935247426/2544563207.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Circular image mask */
+.circular-mask {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* Topography pattern */
+.topography-pattern {
+  background-color: #1a1922;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Cpath fill='%23262531' d='M0 100 Q 150 50 300 100 T 600 100 V 0 H 0 Z'/%3E%3Cpath fill='%232a2939' d='M0 200 Q 150 150 300 200 T 600 200 V 100 Q 450 150 300 100 T 0 100 Z'/%3E%3Cpath fill='%23262531' d='M0 300 Q 150 250 300 300 T 600 300 V 200 Q 450 250 300 200 T 0 200 Z'/%3E%3Cpath fill='%232a2939' d='M0 400 Q 150 350 300 400 T 600 400 V 300 Q 450 350 300 300 T 0 300 Z'/%3E%3Cpath fill='%23262531' d='M0 500 Q 150 450 300 500 T 600 500 V 400 Q 450 450 300 400 T 0 400 Z'/%3E%3Cpath fill='%232a2939' d='M0 600 Q 150 550 300 600 T 600 600 V 500 Q 450 550 300 500 T 0 500 Z'/%3E%3C/svg%3E");
+  background-size: cover;
+}
