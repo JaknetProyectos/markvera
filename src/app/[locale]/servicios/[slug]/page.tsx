@@ -1,3 +1,4 @@
+import { use } from "react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import {
@@ -11,18 +12,11 @@ import {
   Rocket,
   Star,
 } from "lucide-react";
-
+import { useLocale, useTranslations } from "next-intl";
 
 import { servicesEnglish, servicesSpanish } from "@/data/services";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getLocale, getTranslations } from "next-intl/server";
-
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
 
 type ServiceStep = {
   titulo: string;
@@ -39,11 +33,11 @@ type Service = {
   featureImage: string;
 };
 
-export function generateStaticParams() {
-  return servicesSpanish.map((service) => ({
-    slug: service.slug,
-  }));
-}
+type Props = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
 
 function SectionTitle({
   icon: Icon,
@@ -54,31 +48,29 @@ function SectionTitle({
   title: string;
   subtitle?: string;
 }) {
-  return (<div className="mb-6"> <div className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/20 bg-fuchsia-500/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-fuchsia-200 shadow-[0_0_18px_rgba(236,72,153,0.15)]"> <Icon className="h-4 w-4" />
-    {title} </div>
+  return (
+    <div className="mb-6">
+      <div className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/20 bg-fuchsia-500/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-fuchsia-200">
+        <Icon className="h-4 w-4" />
+        {title}
+      </div>
 
-
-    {subtitle ? (
-      <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
-        {subtitle}
-      </p>
-    ) : null}
-  </div>
-
-
+      {subtitle ? (
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
+          {subtitle}
+        </p>
+      ) : null}
+    </div>
   );
 }
 
-export default async function ServicePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const t = await getTranslations("serviceDetail");
-  const { slug } = await params;
+export default function ServicePage({ params }: Props) {
+  const { slug } = use(params);
+  const t = useTranslations("serviceDetail");
+  const locale = useLocale();
 
-  const locale = await getLocale()
-  const services = locale == "es" ? servicesSpanish : servicesEnglish;
+
+  const services = locale === "es" ? servicesSpanish : servicesEnglish;
 
   const servicio = services.find((item) => item.slug === slug) as
     | Service
@@ -88,8 +80,8 @@ export default async function ServicePage({
 
   if (!servicio) {
     return (
-      <> <Header />
-
+      <>
+        <Header />
 
         <main className="min-h-screen overflow-hidden bg-[#0b0b14] text-white">
           <div className="relative">
@@ -134,17 +126,14 @@ export default async function ServicePage({
         <Footer />
       </>
     );
-
-
   }
 
   return (
-    <> <Header />
-
+    <>
+      <Header />
 
       <main className="min-h-screen overflow-hidden bg-[#0b0b14] text-white">
         <div className="relative">
-          {/* Background */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.22),_transparent_35%),radial-gradient(circle_at_20%_20%,_rgba(236,72,153,0.14),_transparent_22%),radial-gradient(circle_at_80%_30%,_rgba(139,92,246,0.16),_transparent_18%)]" />
             <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -155,7 +144,6 @@ export default async function ServicePage({
           </div>
 
           <div className="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
-            {/* Hero */}
             <section className="relative mb-10 overflow-hidden rounded-[2.5rem] border border-fuchsia-400/15 bg-[#0f0f1a]/80 shadow-[0_0_80px_rgba(168,85,247,0.18)] backdrop-blur-xl">
               <div className="absolute inset-0">
                 {servicio.heroImage ? (
@@ -195,7 +183,10 @@ export default async function ServicePage({
                     </li>
                     <li className="text-white/30">›</li>
                     <li>
-                      <Link href="/servicios" className="transition hover:text-white">
+                      <Link
+                        href="/servicios"
+                        className="transition hover:text-white"
+                      >
                         {t("breadcrumb.services")}
                       </Link>
                     </li>
@@ -208,7 +199,6 @@ export default async function ServicePage({
               </div>
             </section>
 
-            {/* Feature + services list */}
             <section className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
               <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-[0_0_60px_rgba(236,72,153,0.12)] backdrop-blur-xl">
                 <div className="relative aspect-[16/9] w-full bg-[#111120]">
@@ -259,7 +249,6 @@ export default async function ServicePage({
               </aside>
             </section>
 
-            {/* Description + benefits + process */}
             <section className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.95fr]">
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_0_60px_rgba(168,85,247,0.10)] backdrop-blur-xl sm:p-8">
                 <SectionTitle
@@ -339,7 +328,5 @@ export default async function ServicePage({
 
       <Footer />
     </>
-
-
   );
 }

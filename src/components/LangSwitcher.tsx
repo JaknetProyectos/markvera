@@ -27,20 +27,20 @@ export default function LangSwitcher() {
 
         rounded-2xl
 
-        border border-cyan-400/15
+        border border-purple-400/20
 
-        bg-[#0b111a]/85
+        bg-[#120d1f]/90
         backdrop-blur-xl
 
         px-4 py-3
 
-        shadow-[0_0_30px_rgba(34,211,238,0.08)]
+        shadow-[0_0_30px_rgba(168,85,247,0.12)]
 
         transition-all duration-300
 
         hover:-translate-y-1
-        hover:border-cyan-400/30
-        hover:shadow-[0_0_35px_rgba(34,211,238,0.18)]
+        hover:border-fuchsia-400/40
+        hover:shadow-[0_0_40px_rgba(192,132,252,0.25)]
 
         active:scale-[0.98]
 
@@ -58,9 +58,9 @@ export default function LangSwitcher() {
           duration-500
           group-hover:opacity-100
           bg-gradient-to-r
-          from-cyan-400/5
-          via-cyan-300/10
-          to-cyan-400/5
+          from-purple-500/10
+          via-fuchsia-400/15
+          to-violet-500/10
         "
       />
 
@@ -76,18 +76,18 @@ export default function LangSwitcher() {
 
           rounded-xl
 
-          border border-cyan-400/15
+          border border-purple-400/20
 
-          bg-cyan-400/10
+          bg-purple-500/10
 
-          text-cyan-300
+          text-purple-300
 
           transition-all
           duration-500
 
           group-hover:rotate-12
           group-hover:scale-110
-          group-hover:bg-cyan-400/15
+          group-hover:bg-purple-500/20
         "
       >
         {isPending ? (
@@ -102,12 +102,12 @@ export default function LangSwitcher() {
         <div className="mt-1 flex items-center justify-center gap-2">
           <span
             className="
-            text-[10px]
-            font-bold
-            uppercase
-            tracking-[0.25em]
-            text-cyan-400
-          "
+              text-[10px]
+              font-bold
+              uppercase
+              tracking-[0.25em]
+              text-fuchsia-300
+            "
           >
             {locale === "es" ? "Español" : "English"}
           </span>
@@ -116,7 +116,7 @@ export default function LangSwitcher() {
             className="
               h-3.5
               w-3.5
-              text-cyan-400/60
+              text-purple-300/70
               transition-transform
               duration-300
               group-hover:translate-x-0.5
@@ -124,7 +124,6 @@ export default function LangSwitcher() {
           />
         </div>
       </div>
-
     </button>
   );
 }

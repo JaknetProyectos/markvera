@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Fácil de cambiar
 const BRAND_NAME = `Markvera`;
-const BRAND_URL = `https://markvera.com`;
+const BRAND_URL = `https://mark-vera.com`;
 const SUPPORT_EMAIL = `atencion@mark-vera.com`;
 const BRAND_LOGO = `https://mark-vera.com/title.png`;
 const PRODUCT_IMAGE="https://mark-vera.com/logo.png"
@@ -849,15 +849,14 @@ export async function POST(req: Request) {
 
     await Promise.all([
       resend.emails.send({
-        from: `${BRAND_NAME} <${SUPPORT_EMAIL}>`,
+        from: `${BRAND_NAME} <atencion@mark-vera.com>`,
         to: [String(customer.email || "")],
         subject: `Confirmación de compra #${orderId} - ${BRAND_NAME}`,
         html: customerHtml,
       }),
       resend.emails.send({
-        from: `${BRAND_NAME} <${SUPPORT_EMAIL}>`,
+        from: `${BRAND_NAME} <atencion@mark-vera.com>`,
         to: [SUPPORT_EMAIL],
-        replyTo: String(customer.email || ""),
         subject: `NUEVA CONTRATACIÓN #${orderId}`,
         html: internalHtml,
       }),
