@@ -11,7 +11,7 @@ function LegalEs() {
       <LegalStyle />
 
       <section>
-        <h1>TÉRMINOS Y CONDICIONES – ALPHA BITE</h1>
+        <h1>TÉRMINOS Y CONDICIONES – Markvera</h1>
 
         <h2>1. ACEPTACIÓN DEL CONVENIO</h2>
 
@@ -493,7 +493,7 @@ function LegalEn() {
       <LegalStyle />
 
       <section>
-        <h1>TERMS AND CONDITIONS – ALPHA BITE</h1>
+        <h1>TERMS AND CONDITIONS – Markvera</h1>
 
         <h2>1. ACCEPTANCE OF THE AGREEMENT</h2>
 
